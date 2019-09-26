@@ -4,6 +4,10 @@ html{
 	background-color: #202020;
 }
 
+.flavicon{
+
+}
+
 #top-nav{
 	z-index: 1;
 	position: fixed;
@@ -17,13 +21,13 @@ html{
 	border-width: 0.5px;
 }
 
-.logo{
+.nav-logo{
 	display: inline-flex;
 	padding-left: 25px;
 	padding-top: 6px;
 }
 
-.flavicon{
+.logo{
 	height: 60px;
 	width: 60px;
 	display: inline-block;
