@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
 
 html, main, body{
-	background-color: #202020;
+	background-color: #565656;
 }
 
 .top-nav{
@@ -79,51 +79,24 @@ html, main, body{
 	text-align: center;
 }
 
-#box{
-	margin: 0 auto;
-	height: 700px;
-	width: 1200px;
-	color: white;
-	border: solid;
-}
-
 .container {
 	margin: 0 auto;
 	width: 1200px;
 	height: 700px;
 	/*outline: 1px solid red;*/
-	border: 20px solid transparent;
+	border: 5px solid transparent;
 	box-sizing: border-box;
 	text-transform: uppercase;
 	font-weight: 900;
 	font-family: "Open Sans","Source Sans Pro",Helvetica,sans-serif;
 	font-size: 1em;
 	letter-spacing: 1em;
-	padding: 1rem;
-	display:flex;
-	justify-content: center;
-	align-items: center;
-  }
-
-  .demo {
-	/*background-image:
-	  linear-gradient(white, white),
-	  linear-gradient(180deg, cornflowerblue, purple);*/
-
-	background-image:
-	  linear-gradient(white, white),
-	  linear-gradient(270deg, #00D7B9, #B95DD7 50%, #FFB367 100%);
-
-	background-repeat: no-repeat;
-	background-origin: padding-box, border-box;
-	text-align: center;
   }
 
   .animated {
 	background-image:
-	  linear-gradient(white, white),
-	  linear-gradient(180deg, cornflowerblue, purple 50%, cornflowerblue);
-
+	  linear-gradient(#565656, #565656),
+	  linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
 	background-repeat: no-repeat;
 	background-size: 100% 100%, 100% 200%;
 	background-position: 0 0, 0 100%;
