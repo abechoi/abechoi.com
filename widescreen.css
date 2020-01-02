@@ -5,20 +5,27 @@ html, main, body{
 }
 
 .top-nav{
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
+	top: 2px;
+	left: 2px;
 	height: 50px;
 	background-color: #282828;
-	border-bottom: solid;
-	border-color: #565656;
-	border-width: 0.5px;
+	display: flex;
 }
 
-.top-nav-right{
-	float: right;
+.logo{
+	padding: 5px;
+	height: 40px;
+	width: 40px;
 }
+
+.top-nav-message > p{
+	padding-left: 20px;
+	font-family: 'Roboto Mono', monospace;
+	font-size: 14px;
+	color: #02DDFF;
+}
+
+.top-nav-right{ margin-left: auto; }
 
 .top-nav-right a{
 	float: left;
@@ -42,27 +49,8 @@ html, main, body{
 	color: white;
 }
 
-.logo{
-	padding: 5px;
-	height: 40px;
-	width: 40px;
-}
 
-.banner{
-	height: 50px;
-	width: 100%;
-	float: left;
-	max-height: fit-content;
-	max-width: fit-content;
-}
 
-.banner > p{
-	float: right;
-	margin-left: 10px;
-	font-family: 'Roboto Mono', monospace;
-	font-size: 14px;
-	color: #02DDFF;
-}
 
 .page-section{
 	margin-top: 50px;
@@ -80,22 +68,21 @@ html, main, body{
 }
 
 .container {
+	z-index: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
 	margin: 0 auto;
-	width: 1200px;
-	height: 700px;
+	width: 100%;
+	height: 54px;
 	/*outline: 1px solid red;*/
-	border: 5px solid transparent;
+	border: 2px solid transparent;
 	box-sizing: border-box;
-	text-transform: uppercase;
-	font-weight: 900;
-	font-family: "Open Sans","Source Sans Pro",Helvetica,sans-serif;
-	font-size: 1em;
-	letter-spacing: 1em;
   }
 
   .animated {
 	background-image:
-	  linear-gradient(#565656, #565656),
+	  linear-gradient(#282828, #282828),
 	  linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
 	background-repeat: no-repeat;
 	background-size: 100% 100%, 100% 200%;
