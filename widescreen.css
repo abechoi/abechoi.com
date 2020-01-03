@@ -2,7 +2,10 @@
 
 html, main, body{
 	background-color: #565656;
-	margin: 15px;
+	width: 100%;
+	height: 100%;
+	padding: 0 auto;
+	margin: 0 auto;
 }
 
 .top-nav{
@@ -36,31 +39,26 @@ html, main, body{
 }
 
 /* Change the color of links on hover */
-.top-nav-right a:hover {
+.top-nav-link{
 	cursor: pointer;
 }
   
 /* Add a color to the active/current link */
-.top-nav-right a.active {
+.active, .top-nav-link:hover {
 	border-bottom: solid;
 	border-color: #FF851B;
 	border-width: 4px;
 	color: white;
+	
 }
 
-
-
-
 .page-section{
-	margin-top: 50px;
-	padding: 50px;
-	width: 100%;
+	padding-top: 100px;
 	height: 100%;
 	justify-content: center;
 }
 
 .page-section > .section-title{
-	margin: 0 auto;
 	font-size: 20px;
 	color: white;
 	text-align: center;
@@ -68,11 +66,12 @@ html, main, body{
 
 #box {
 	top: 30px;
-	width: 95%;
+	width: 75%;
 	height: 50px;
+	left: 12.5%;
   }
   .gradient-border {
-	--borderWidth: 3px;
+	--borderWidth: 4px;
 	background: #1D1F20;
 	position: fixed;
 	border-radius: var(--borderWidth);
@@ -84,10 +83,10 @@ html, main, body{
 	left: calc(-1 * var(--borderWidth));
 	height: calc(100% + var(--borderWidth) * 2);
 	width: calc(100% + var(--borderWidth) * 2);
-	background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+	background: linear-gradient(-125deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
 	border-radius: calc(2 * var(--borderWidth));
 	z-index: -1;
-	animation: animatedgradient 3s ease alternate infinite;
+	animation: animatedgradient 4s ease alternate infinite;
 	background-size: 300% 300%;
   }
   

@@ -20,63 +20,52 @@
 			<div class="top-nav-message">
 				<p class="message">Hello! My name is Abe Choi.</p>
 			</div>
-			<div class="top-nav-right">
-				<a class="active" href="#home-section">Home</a>
-				<a href="#project-section">Projects</a>
-				<a href="#blog-section">Blogs</a>
-				<a href="#contact-section">About</a>
-				<a href="https://github.com/abechoi">Github</a>	
+			<div class="top-nav-right" id="nav-links">
+				<a class="top-nav-link active" href="#blog-section">Blogs</a>
+				<a class="top-nav-link" href="#project-section">Projects</a>
+				<a class="top-nav-link" href="#about-section">About</a>	
 			</div>
 		</div>
 	</div>
+
+	<script>
+		// Add active class to the current button (highlight it)
+		var header = document.getElementById("nav-links");
+		var btns = header.getElementsByClassName("top-nav-link");
+		for (var i = 0; i < btns.length; i++) {
+		  btns[i].addEventListener("click", function() {
+		  var current = document.getElementsByClassName("active");
+		  current[0].className = current[0].className.replace(" active", "");
+		  this.className += " active";
+		  });
+		}
+	</script>
 	
 
 	<!----------
-	Home Section
-	----------->
-	<section class="page-section" id="home-section">
-		<p class="section-title">HOME</p>
-		
-		
-
-	</section>
-
-	<!-- Uncomment this to activate Project Section
-	--------------- 
-	Project Section
-	---------------
-	<section class="page-section" id="project-section">
-
-
-		<div class="container">
-			<div class="d1">1</div>
-			<div class="d2">2</div>
-			<div class="d3">3</div>
-			<div class="d4">4</div>
-			<div class="d5">5</div>
-			<div class="d6">6</div>
-			<div class="d7">7</div>
-			<div class="d8">8</div>
-			<div class="d9">9</div>
-		</div>
-
-	</section>
-	Uncomment this to activate Project Section	-->
-
-	<!-- Uncomment this to activate Blog Section
-	------------ 
 	Blog Section
-	------------
+	----------->
 	<section class="page-section" id="blog-section">
+		<p class="section-title">BLOGS</p>
+		
 		
 
 	</section>
-	Uncomment this to activate Blog Section	-->
 
-	<!------------- 
-	Contact Section
+	
+	<!-------------
+	Project Section
 	-------------->
-	<section class="page-section" id="contact-section">
+	<section class="page-section" id="project-section">
+		<p class="section-title">PROJECTS</p>
+
+	</section>
+	
+	<!-----------
+	About Section
+	------------>
+	<section class="page-section" id="about-section">
+		<p class="section-title">ABOUT</p>
 		
 
 	</section>
