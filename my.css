@@ -1,104 +1,141 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway|Italianno');
 
-html, main, body{
-	background-color: #565656;
-	width: 100%;
+
+body, html {
 	height: 100%;
-	padding: 0 auto;
+	width: 100%;
 	margin: 0 auto;
+	padding: 0 auto;
+	background-color: #282828;
+  }
+  
+.parallax {
+	/* The image used */
+	background-image: url('img/hero-marble.png');
+	height: 100%; 
+	width: 100%;
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;	
 }
 
-.top-nav{
-	height: 50px;
+.logo{
+	padding-top: 25px;
+	margin-left: 25px;
+}
+
+.hero-title{
+	padding-top: 100px;
+	padding-bottom: 20px;
+	height: 50%;
+	text-align: center;
+
+}
+
+.hero-title h1{
+	margin: 0;
+	padding-left: 55px;
+	padding-bottom: 20px;
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+	font-size: 6em;
+	text-shadow: 1px 1px 1px #000;
+}
+.hero-title h2{
+	margin: 0;
+	padding-left: 5px;
+	font-family: 'Raleway', sans-serif;
+	color: white;
+	font-size: 2em;
+	text-shadow: 1px 1px 1px #000;
+
+}
+
+/* Style the navbar */
+#navbar {
+	overflow: hidden;
+	width: 100%;
 	background-color: #282828;
 	display: flex;
 }
 
-.logo{
-	padding: 5px;
-	height: 40px;
-	width: 40px;
-}
-
-.top-nav-message > p{
-	padding-left: 20px;
-	font-family: 'Roboto Mono', monospace;
-	font-size: 14px;
-	color: #02DDFF;
-}
-
-.top-nav-right{ margin-left: auto; }
-
-.top-nav-right a{
+/* Navbar links */
+#navbar a {
 	float: left;
-	text-align: center;
-	padding: 14px 16px 7px 16px;
-	text-decoration: none;
+	display: block;
 	color: #f2f2f2;
-	font-size: 17px;
+	text-align: center;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	text-decoration: none;
 }
 
-/* Change the color of links on hover */
-.top-nav-link{
-	cursor: pointer;
+.internal-links{
+	margin: 0 auto;
 }
-  
-/* Add a color to the active/current link */
-.active, .top-nav-link:hover {
-	border-bottom: solid;
-	border-color: #FF851B;
-	border-width: 4px;
-	color: white;
-	
+
+.internal-links > a{
+	width: 100px;
+	margin: 0px 30px;
+}
+
+
+/* Page content */
+.content {
+	padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+	padding-top: 60px;
 }
 
 .page-section{
-	padding-top: 100px;
 	height: 100%;
-	justify-content: center;
 }
 
-.page-section > .section-title{
-	font-size: 20px;
-	color: white;
-	text-align: center;
+.avatar{
+	margin-top: 25px;
+	margin-left: 25px;
+	border: 3px solid #282828;
 }
 
-#box {
-	top: 30px;
-	width: 75%;
-	height: 50px;
-	left: 12.5%;
-  }
-  .gradient-border {
-	--borderWidth: 4px;
-	background: #1D1F20;
-	position: fixed;
-	border-radius: var(--borderWidth);
-  }
-  .gradient-border:after {
-	content: '';
-	position: absolute;
-	top: calc(-1 * var(--borderWidth));
-	left: calc(-1 * var(--borderWidth));
-	height: calc(100% + var(--borderWidth) * 2);
-	width: calc(100% + var(--borderWidth) * 2);
-	background: linear-gradient(-125deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
-	border-radius: calc(2 * var(--borderWidth));
-	z-index: -1;
-	animation: animatedgradient 4s ease alternate infinite;
-	background-size: 300% 300%;
-  }
-  
-  
-  @keyframes animatedgradient {
-	  0% {
-		  background-position: 0% 50%;
-	  }
-	  50% {
-		  background-position: 100% 50%;
-	  }
-	  100% {
-		  background-position: 0% 50%;
-	  }
-  }
+#about{
+	padding-left: 0px;
+	height: 100%; 
+	background-color: #002672;
+}
+
+.about-section{
+	padding-left: 100px;
+}
+
+.about-section > p{
+	font-family: 'Raleway','Courier New', Courier, monospace;
+	font-size: 2rem;
+	line-height: 0.5;
+}
+
+#projects{
+	background-image: url('img/hero-marble.png');
+	height: 100%; 
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;	
+}
+
+#contact{
+	height: 75%;
+	background-color: #280550;
+}

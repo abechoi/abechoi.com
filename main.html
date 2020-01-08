@@ -1,81 +1,56 @@
 <!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1" name="author" content="Abe Choi">
+		<link rel="stylesheet" type="text/css" href="my.css">
+		<title>Abe Choi | Projects</title>
+		<link class="flavicon" rel="icon" type="image/png" href="img/flavicon.png"/>
+	</head>
+	<body>
+		
 
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1" name="author" content="Abe Choi">
-	<link rel="stylesheet" type="text/css" href="my.css">
-	<title>IT Blogs & News</title>
-	<link class="flavicon" rel="icon" type="image/png" href="img/flavicon.png"/>
-</head>
-
-<main id="main" class="main">
-
-	<!------------ 
-	Navigation Bar
-	------------->
-	<div class="gradient-border" id="box">
-		<div class="top-nav">
-			<div class="top-nav-logo">
-				<a href="#home-section"><img class="logo" src="img/logo.png"></a>
+		<div class="parallax" id="home">
+			<div class="logo">
+				<a href="#about"><img src="img/logo50.png"></a>
 			</div>
-			<div class="top-nav-message">
-				<p class="message">Hello! My name is Abe Choi.</p>
+			<div class="hero-title">
+				<h1>ABE CHOI</h1>
+				<h2>FULLSTACK&emsp;DEVELOPER</h2>
 			</div>
-			<div class="top-nav-right" id="nav-links">
-				<a class="top-nav-link active" href="#blog-section">Blogs</a>
-				<a class="top-nav-link" href="#project-section">Projects</a>
-				<a class="top-nav-link" href="#about-section">About</a>	
+			<div id="navbar">
+				<div class="internal-links">
+					<a href="#home">HOME</a>
+					<a href="#about">ABOUT</a>
+					<a href="#projects">PROJECTS</a>
+					<a href="#contact">CONTACT</a>
+				</div>
 			</div>
+			
 		</div>
-	</div>
 
-	<script>
-		// Add active class to the current button (highlight it)
-		var header = document.getElementById("nav-links");
-		var btns = header.getElementsByClassName("top-nav-link");
-		for (var i = 0; i < btns.length; i++) {
-		  btns[i].addEventListener("click", function() {
-		  var current = document.getElementsByClassName("active");
-		  current[0].className = current[0].className.replace(" active", "");
-		  this.className += " active";
-		  });
-		}
-	</script>
-	
+		<!-----------
+		ABOUT SECTION
+		------------>
+		<section class="page-section" id="about">	
+			<div class="about">
+			</div>	
+		</section>
+		<!--------------
+		PROJECTS SECTION
+		--------------->
+		<section class="page-section" id="projects">
+			
+		</section>
+		<!-------------
+		CONTACT SECTION
+		-------------->
+		<section class="page-section" id="contact">
+			
+		</section>
 
-	<!----------
-	Blog Section
-	----------->
-	<section class="page-section" id="blog-section">
-		<p class="section-title">BLOGS</p>
-		
-		
-
-	</section>
-
-	
-	<!-------------
-	Project Section
-	-------------->
-	<section class="page-section" id="project-section">
-		<p class="section-title">PROJECTS</p>
-
-	</section>
-	
-	<!-----------
-	About Section
-	------------>
-	<section class="page-section" id="about-section">
-		<p class="section-title">ABOUT</p>
-		
-
-	</section>
-
-	<!----
-	Footer
-	----->
-	<footer>
-		
-	</footer>
+		<script src="scripts/stickybar.js"></script>
 
 
-</main>
+
+	</body>
+</html>
