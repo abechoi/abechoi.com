@@ -1,0 +1,70 @@
+@import 'menu';
+@import 'config';
+@import 'home';
+@import 'about';
+@import 'projects';
+@import 'contact';
+@import 'responsive';
+
+
+html, body{
+    height: 100%;
+    width: 100%;
+    color: white;
+    font-family: 'Raleway', monospace, sans-serif;
+    background: #2B2E3B;
+}
+
+header{
+    height: 0;
+    width: 0;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    background-image: url('/Users/abe/Desktop/Archive/Wallpapers/1920x1080/white-hex-overlay.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1, h2, h3{
+    font-family: 'Montserrat', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p{
+    font-family: 'Raleway', monospace, sans-serif;
+}
+
+.social-icons{
+    z-index: 3;
+    text-decoration: none;
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+
+    a{
+        padding: 0.4rem;
+        color: transparent;
+
+        i{
+            color: #47848F;
+
+            &:hover{
+                color: #9FEAF9;
+                @include transition-ease;
+            }
+        }
+    }
+
+    
+}
+footer{
+    z-index: 3;
+    font-family: 'Montserrat', Tahoma, Geneva, Verdana, sans-serif;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+}
