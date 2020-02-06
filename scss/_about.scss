@@ -3,15 +3,60 @@
     flex-flow: column wrap;
     align-items: center;
     height: 100%;
+    padding-top: 40px;
 
     &__title{
-        padding-top: 25px;
         font-size: 3rem;
 
     }
 
     &__text{
+        width: 60%;
+        text-align: center;
         padding-top: 5px;
         font-size: 1rem;
+    }
+
+    .jobs{
+
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        width: 60vw;
+        height: 60px;
+        margin: 2rem auto 0 auto;
+        
+
+        &__job{
+            
+            padding: 0.5rem;
+            margin: 1rem;
+            background: lighten($color: #2B2E3B, $amount: 10%);
+            border-bottom: 5px solid #47848F;
+
+            h2, h3{
+                color: #47848F;
+                margin: 0.5rem 0;
+            }
+
+            h6{
+                font-size: 1rem;
+                margin: 0.5rem 0;
+            }
+
+            p{
+                font-size: 1rem;
+            }
+
+            &:hover{
+                border-bottom: 5px solid #9FEAF9;
+                @include transition-ease;
+
+                h2,h3{
+                    color: #9FEAF9;
+                    @include transition-ease;
+                }
+            }
+        }
     }
 }
