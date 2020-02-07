@@ -1,0 +1,77 @@
+.projects{
+
+    text-align: center;
+    height: 100vh;
+    padding-top: 40px;
+
+    &__title{
+        font-size: 3rem;
+    }
+
+    &__items{
+        width: 60vw;
+        margin: 2rem auto 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+    }
+
+    &__item{
+        position: relative;
+        border-bottom: 5px solid #47848F;
+        overflow: hidden;
+        cursor: pointer;
+
+        img{
+            width: 100%;
+        }
+
+        &::after{
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: #47848F;
+            opacity: 0;
+            @include transition-ease;
+        }
+        &:hover{
+            
+            &::after{
+                top: 0;
+                opacity: 0.9;
+                background-color: #9FEAF9;
+            }
+            .projects__btn{
+                opacity: 1;
+
+            }
+        }
+    }
+
+    &__btns{
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        @include transition-ease;
+
+    }
+
+    &__btn{
+        opacity: 0;
+        color: white;
+        @include transition-ease;
+
+        &:hover{
+            color: white;
+        }
+    }
+
+}

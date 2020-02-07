@@ -208,8 +208,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100%;
   padding-top: 40px;
+  height: 170%;
 }
 
 .about__title {
@@ -269,6 +269,88 @@
   transition: all 0.38s ease-in-out;
 }
 
+.projects {
+  text-align: center;
+  height: 100vh;
+  padding-top: 40px;
+}
+
+.projects__title {
+  font-size: 3rem;
+}
+
+.projects__items {
+  width: 60vw;
+  margin: 2rem auto 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-gap: 2rem;
+}
+
+.projects__item {
+  position: relative;
+  border-bottom: 5px solid #47848F;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.projects__item img {
+  width: 100%;
+}
+
+.projects__item::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #47848F;
+  opacity: 0;
+  -webkit-transition: all 0.38s ease-in-out;
+  transition: all 0.38s ease-in-out;
+}
+
+.projects__item:hover::after {
+  top: 0;
+  opacity: 0.9;
+  background-color: #9FEAF9;
+}
+
+.projects__item:hover .projects__btn {
+  opacity: 1;
+}
+
+.projects__btns {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.38s ease-in-out;
+  transition: all 0.38s ease-in-out;
+}
+
+.projects__btn {
+  opacity: 0;
+  color: white;
+  -webkit-transition: all 0.38s ease-in-out;
+  transition: all 0.38s ease-in-out;
+}
+
+.projects__btn:hover {
+  color: white;
+}
+
 @media screen and (min-width: 800px) {
   .menu-btn {
     visibility: hidden;
@@ -308,6 +390,10 @@
     font-size: 2rem;
   }
   .about {
+    height: 140%;
+    padding-top: 80px;
+  }
+  .projects {
     padding-top: 80px;
   }
 }
@@ -341,6 +427,9 @@
     font-size: 2.9rem;
   }
   .about {
+    padding-top: 90px;
+  }
+  .projects {
     padding-top: 90px;
   }
 }
