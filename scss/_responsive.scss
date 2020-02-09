@@ -1,3 +1,61 @@
+@include media-sm{
+
+    .home{
+
+        &__title{
+            padding-top: 30vh;
+            font-size: 3.4rem;
+        }
+    
+        &__text{
+            font-size: 1rem;
+        }
+    }
+
+    .about{
+        height: 210%;
+        padding-top: 80px;
+
+    }
+
+    .projects{
+        height: 75%;
+        padding-top: 80px;
+
+        &__items{
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        &__btn{
+            font-size: .3rem;
+        }
+    }
+
+    .contact{
+        height: 130%;
+        
+        padding-top: 80px;
+        &__content{
+            font-size: .9rem;
+        }
+        
+        iframe{
+            height: 40%;
+            width: 70%;
+        }
+    }
+
+    .social-icons{
+        i{
+            font-size: 1.5rem;
+        }
+    }
+
+    .copyright{
+        font-size: .8rem;
+    }
+}
+
 @include media-md{
     
     .menu-btn{

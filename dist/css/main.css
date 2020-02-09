@@ -400,6 +400,48 @@
   font-family: 'Raleway', monospace, sans-serif;
 }
 
+@media screen and (max-width: 400px) {
+  .home__title {
+    padding-top: 30vh;
+    font-size: 3.4rem;
+  }
+  .home__text {
+    font-size: 1rem;
+  }
+  .about {
+    height: 210%;
+    padding-top: 80px;
+  }
+  .projects {
+    height: 75%;
+    padding-top: 80px;
+  }
+  .projects__items {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .projects__btn {
+    font-size: .3rem;
+  }
+  .contact {
+    height: 130%;
+    padding-top: 80px;
+  }
+  .contact__content {
+    font-size: .9rem;
+  }
+  .contact iframe {
+    height: 40%;
+    width: 70%;
+  }
+  .social-icons i {
+    font-size: 1.5rem;
+  }
+  .copyright {
+    font-size: .8rem;
+  }
+}
+
 @media screen and (min-width: 800px) {
   .menu-btn {
     visibility: hidden;

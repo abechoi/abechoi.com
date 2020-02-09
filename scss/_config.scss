@@ -8,6 +8,12 @@
     transition: all 0.38s ease-in-out;
 }
 
+@mixin media-sm{
+    @media screen and (max-width: 400px){
+        @content;
+    }
+}
+
 @mixin media-md {
     @media screen and (min-width: 800px){
         @content;
