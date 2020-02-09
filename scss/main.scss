@@ -44,6 +44,7 @@ p{
     position: fixed;
     bottom: 1rem;
     left: 1rem;
+    @include transition-ease;
 
     a{
         padding: 0.4rem;
@@ -59,12 +60,24 @@ p{
         }
     }
 
+    &.turn{
+        transform: translate(-5rem, -4.7rem) rotate(-90deg);
+        @include transition-ease;
+    }
     
 }
-footer{
+.copyright{
     z-index: 3;
     font-family: 'Montserrat', Tahoma, Geneva, Verdana, sans-serif;
     position: fixed;
     bottom: 1rem;
     right: 1rem;
+    @include transition-ease;
+
+    &.turn{
+        transform: 
+          rotate(90deg)
+          translate(-4rem, -4rem);
+          @include transition-ease;
+    }
 }

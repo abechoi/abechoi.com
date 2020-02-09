@@ -3,6 +3,8 @@ const burger = document.querySelector('.menu-btn__burger');
 const nav = document.querySelector('.nav');
 const menuNav = document.querySelector('.menu-nav');
 const navItems = document.querySelectorAll('.menu-nav__item');
+const social = document.querySelector('.social-icons');
+const copyright = document.querySelector('.copyright');
 
 
 let showMenu = false;
@@ -41,4 +43,17 @@ function closeMenu(){
     });
 
     showMenu = false;
+}
+
+window.onscroll = function() { rotate() };
+
+function rotate() {
+
+  if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+    social.classList.add('turn');
+    copyright.classList.add('turn');
+  } else {
+    social.classList.remove('turn');
+    copyright.classList.remove('turn');
+  }
 }

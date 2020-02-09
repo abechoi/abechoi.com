@@ -1,7 +1,7 @@
 .projects{
 
     text-align: center;
-    height: 100vh;
+    height: 350%;
     padding-top: 40px;
 
     &__title{
@@ -38,11 +38,14 @@
             @include transition-ease;
         }
         &:hover{
-            
+            border-bottom: 5px solid #9FEAF9;
+            @include transition-ease;
+
             &::after{
                 top: 0;
                 opacity: 0.9;
-                background-color: #9FEAF9;
+                background-color: black;
+                @include transition-ease;
             }
             .projects__btn{
                 opacity: 1;
@@ -66,11 +69,12 @@
 
     &__btn{
         opacity: 0;
-        color: white;
+        color: #47848F;
+        font-size: 1.1rem;
         @include transition-ease;
 
         &:hover{
-            color: white;
+            color: #9FEAF9;
         }
     }
 

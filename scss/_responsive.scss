@@ -50,12 +50,21 @@
     }
 
     .about{
-        height: 140%;
+        height: 160%;
         padding-top: 80px;
 
     }
 
     .projects{
+        height: 130%;
+        padding-top: 80px;
+
+        &__items{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    .contact{
         padding-top: 80px;
     }
 }
@@ -106,6 +115,19 @@
 
     }
     .projects{
+
+        height: 115%;
+        padding-top: 90px;
+        
+        
+        &__items{
+            width: 80vw;
+            grid-template-columns: repeat(3, 1fr);
+            padding-bottom: 80px;
+        }
+    }
+
+    .contact{
         padding-top: 90px;
     }
 }
